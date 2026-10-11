@@ -1,0 +1,669 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8">
+<!--
+================================================================
+株式会社Elista ブランドサイト デザイン案（9/26 house style 版）
+  コンセプト：「あなたの寸法」
+    事業内容（オーダーメイドファッション／スタイリング・ショッピング同行／婚活・特別な日のスタイリング／パーソナルカラー診断）から着想。
+    体型を測る巻尺、ひと針ずつ進む縫い目、肌・髪・瞳の色に合わせる色見本。似合う一着は「その人の寸法」を
+    ていねいに測るところから生まれる ―― 仕立ての道具で、Elistaの仕事を描いた。
+    ・ヒーロー：中央の円い写真の縁を、縫い目がひと針ずつ一周し、外側を色見本の小片がゆっくり巡るCanvas
+                （枠付きの分割ヒーロー Archetype D：左にリード、中央に写真の円、右に縦書きの題）
+    ・右端のスクロールレール：仕立て用の巻尺。目盛りが流れ「086.0 cm」と寸法を読み上げる
+    ・図：ジャケットの輪郭を縫い線が描き、寸法の線が引かれる
+    ※社名「Elista」は代表者のお名前の読みや地名（都市名）と重なる可能性があるため、社名からの着想は採用せず、事業内容のみから着想しています。
+    ※所在地・地名など土地から着想した要素は採用していません。
+  書体：Zen Old Mincho／Zen Kaku Gothic New／Bodoni Moda（英字）／IBM Plex Mono（寸法表示）
+  配色：チャコールグレー #1B1B1F を地に、チャコペンの青 #8EB4D8。色見本の六色はパーソナルカラーの章だけで使用
+  デプロイ：Cloudflare Pages（Direct Upload）にこのファイルをそのままアップロード。
+            ビルド不要。外部依存は Google Fonts と Unsplash 画像のみ。
+
+  ■ 公開前の確認事項（チェックリスト）
+  【確認事項】1. 英字表記は商号「Elista」をもとにロゴを「ELISTA」と大文字表記しています（仮）
+  【確認事項】2. 社名は代表者のお名前・地名と重なる可能性があるため、社名の由来には触れず事業内容から着想しています（社名の由来を載せたい場合はご本人に伺ってください）
+  【確認事項】3. キャッチコピー「あなたのための一着を、ともに選ぶ。」とコンセプト文は案です
+  【確認事項】4. 四事業の説明はCSVの内容を言い換え・要約しています。各事業の英字見出し（Order made 等）は仮表記です
+  【確認事項】5. 連携している結婚相談所の名称・連携の内容はCSVにないため記載していません（「結婚相談所とも連携」はCSVの表現）
+  【確認事項】6. パーソナルカラー診断の診断方法・資格の有無はCSVにないため記載していません。色見本の名前（Soft・Cool 等）はイメージで、診断の分類名ではありません
+  【確認事項】7. 店舗・アトリエの有無、料金、仕立て期間はCSVにないため記載していません
+  【確認事項】8. 「一着ができるまで」4ステップは想定の流れです
+  【確認事項】9. 代表者の役職名は株式会社のため「代表取締役」と仮置きしています
+  【確認事項】10. 代表メッセージは草案です。ご本人の確認・修正を経て公開してください（署名は役職のみ。氏名は会社概要に記載）
+  【確認事項】11. 設立年月日・資本金・実績などはCSVにないため記載していません
+  【確認事項】12. 画像はUnsplashのフリー素材（仮）
+  【確認事項】13. OGP画像・favicon・公開URLは公開先ドメインの確定後に設定してください
+  ※ご依頼に合わせ、連絡用のフォーム・連絡先の案内ブロック・代表者写真は設けていません。
+
+  ▼ 使用写真（Unsplash）
+  photo-1593030103066-0093718efeb9（ネイビーのスーツ・ヒーローの円）
+  photo-1598033129183-c4f50c736f10（白いシャツとネクタイ）
+  photo-1490481651871-ab68de25d43d（ハンガーに掛かった服）
+  photo-1491336477066-31156b5e4f35（スーツの袖口）
+  photo-1558769132-cb1aea458c5e（並んだニット）
+  photo-1600091166971-7f9faad6c1e2（タキシードのディスプレイ）
+  photo-1513364776144-60967b0f800f（色とりどりの絵の具と筆）
+  photo-1594938298603-c8148c4dae35（ブルーのチェック柄のスーツ）
+  photo-1445205170230-053b83016050（店内のラックに並ぶ服）
+  ※旧案の photo-1603252109303・photo-1523381294911 は服のタグ（ブランド名）が読めるため差し替えました
+================================================================
+-->
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>株式会社Elista｜あなたのための一着を、ともに選ぶ。</title>
+<meta name="description" content="株式会社Elistaは、オーダーシャツ・オーダースーツを中心としたオーダーメイドファッションの企画・販売、スタイリング・ショッピング同行、婚活・特別な日のスタイリング相談、パーソナルカラー診断を行う会社です。">
+<meta property="og:title" content="株式会社Elista｜あなたのための一着を、ともに選ぶ。">
+<meta property="og:description" content="あなたのための一着を、ともに選ぶ。オーダーメイド・スタイリング・パーソナルカラー診断。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="株式会社Elista">
+<!-- 【確認事項】og:url / og:image は公開ドメイン確定後に設定してください -->
+<meta name="theme-color" content="#1B1B1F">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231B1B1F'/%3E%3Ccircle cx='32' cy='32' r='18' fill='none' stroke='%238EB4D8' stroke-width='2' stroke-dasharray='4 3'/%3E%3Cpath d='M22 24l10 14 10-14' fill='none' stroke='%23F1EDE6' stroke-width='3' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400;1,6..96,500&amp;family=IBM+Plex+Mono:wght@400&amp;family=Zen+Kaku+Gothic+New:wght@400;500;700&amp;family=Zen+Old+Mincho:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{--base:#1B1B1F;        /* チャコールグレーの生地 */
+  --base2:#232328;
+  --deep:#141417;
+  --text:#F1EDE6;        /* 生成りのシャツ地 */
+  --mute:#A19C95;
+  --accent:#8EB4D8;      /* チャコペンの青 */
+  --line:rgba(241,237,230,.14);
+  --paper:#F3EFE8;--ink:#222226;--pmute:#6A665F;--pline:rgba(34,34,38,.16);
+  --hd-bg:rgba(27,27,31,.86);--menu-bg:rgba(20,20,23,.97);--menu-fg:#F1EDE6;
+  --serif:"Zen Old Mincho","Hiragino Mincho ProN","Yu Mincho",serif;
+  --sans:"Zen Kaku Gothic New","Hiragino Sans","Yu Gothic",sans-serif;
+  --latin:"Bodoni Moda","Didot","Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  --hh:76px;
+  --fallback:repeating-linear-gradient(45deg,rgba(241,237,230,.06) 0 2px,transparent 2px 8px),repeating-linear-gradient(-45deg,rgba(142,180,216,.08) 0 2px,transparent 2px 8px),#232328;}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--hh) + env(safe-area-inset-top,0px));-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--base);color:var(--text);font-family:var(--sans);font-size:16px;line-height:1.9;letter-spacing:.04em;word-break:auto-phrase;text-wrap:pretty;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3,h4,p,figure{margin:0}
+ul,ol{margin:0;padding:0;list-style:none}
+.nw{display:inline-block}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+.skip{position:absolute;left:12px;top:-60px;z-index:200;background:var(--accent);color:var(--base);padding:10px 16px;text-decoration:none;font-weight:700}
+.skip:focus{top:calc(12px + env(safe-area-inset-top,0px))}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.wrap{width:min(1160px,100% - 48px);margin-inline:auto}
+.sec{position:relative;padding:clamp(96px,14vw,180px) 0}
+.sec--alt{background:var(--base2)}
+.sec--deep{background:var(--deep)}
+.sec--paper{--text:var(--ink);--mute:var(--pmute);--line:var(--pline);background:var(--paper);color:var(--ink)}
+.latin{font-family:var(--latin)}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+
+/* ---- header ---- */
+.hd{position:fixed;inset:0 0 auto 0;z-index:100;padding-top:env(safe-area-inset-top,0px);border-bottom:1px solid transparent;color:var(--hd-fg,var(--text));transition:background .4s,border-color .4s,color .4s,backdrop-filter .4s}
+.hd.is-scrolled{background:var(--hd-bg);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-color:var(--hd-line,var(--line));color:var(--hd-fg2,var(--hd-fg,var(--text)))}
+.hd__in{height:var(--hh);width:min(1240px,100% - 40px);margin-inline:auto;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:0}
+.logo svg{width:32px;height:32px;flex:none}
+.logo__t{display:flex;flex-direction:column;line-height:1.3;min-width:0}
+.logo__t b{font-family:var(--serif);font-weight:600;font-size:17px;letter-spacing:.12em;white-space:nowrap}
+.logo__t small{font-family:var(--latin);font-size:11px;letter-spacing:.16em;opacity:.72;white-space:nowrap}
+.gnav ul{display:flex;gap:clamp(16px,2.2vw,32px)}
+.gnav a{position:relative;display:block;padding:6px 0;font-size:13px;letter-spacing:.14em;text-decoration:none}
+.gnav a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.gnav a:hover::after,.gnav a:focus-visible::after{transform:scaleX(1)}
+.menu-btn{display:none;background:none;border:0;color:inherit;width:44px;height:44px;cursor:pointer;position:relative;flex:none}
+.menu-btn span{position:absolute;left:11px;right:11px;height:1.5px;background:currentColor;transition:transform .3s,opacity .3s}
+.menu-btn span:nth-child(1){top:16px}.menu-btn span:nth-child(2){top:22px}.menu-btn span:nth-child(3){top:28px}
+.menu-btn[aria-expanded="true"] span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.menu-btn[aria-expanded="true"] span:nth-child(2){opacity:0}
+.menu-btn[aria-expanded="true"] span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+@media (max-width:900px){
+  .menu-btn{display:block;z-index:120}
+  .menu-btn[aria-expanded="true"]{color:var(--menu-fg)}
+  .gnav{position:fixed;inset:0;background:var(--menu-bg);color:var(--menu-fg);display:grid;place-items:center;opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s;z-index:110}
+  .gnav.is-open{opacity:1;visibility:visible}
+  .gnav ul{flex-direction:column;align-items:center;gap:26px}
+  .gnav a{font-family:var(--serif);font-size:20px;letter-spacing:.16em}
+}
+
+/* ---- rail ---- */
+.rail{position:fixed;right:22px;top:50%;transform:translateY(-50%);height:52vh;width:18px;z-index:90;pointer-events:none}
+.rail__line{position:absolute;left:8px;top:0;bottom:0;width:1px;background:var(--rail-line,var(--line))}
+.rail__fill{position:absolute;left:8px;top:0;width:1px;height:100%;background:var(--accent);transform-origin:top;transform:scaleY(0)}
+.rail__tick{position:absolute;left:4px;width:9px;height:1px;background:var(--rail-tick,var(--mute));opacity:.7;transition:width .4s,background .4s,opacity .4s}
+.rail__tick.is-passed{width:12px;background:var(--accent);opacity:1}
+.rail__read{position:absolute;right:24px;top:0;transform:translateY(-50%);font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--mute);writing-mode:vertical-rl;font-variant-numeric:tabular-nums;white-space:nowrap}
+@media (max-width:860px){.rail{right:6px;height:36vh;width:14px}.rail__read,.rail__lbl{display:none}}
+
+/* ---- hero ---- */
+.hero{position:relative;min-height:100vh;min-height:100svh;overflow:hidden;isolation:isolate}
+.hero__cv{position:absolute;inset:0;width:100%;height:100%;display:block;z-index:0}
+.hero__veil{position:absolute;inset:0;pointer-events:none;z-index:1}
+.hero__in{position:relative;z-index:2}
+.catch{font-family:var(--serif);font-weight:600;writing-mode:vertical-rl;font-size:clamp(36px,4.6vw,62px);letter-spacing:.2em;line-height:1.6;margin:0}
+.catch > span{display:block}
+.catch > span + span{padding-top:var(--stg,2.4em)}
+@media (max-width:820px){
+  .catch{writing-mode:horizontal-tb;font-size:clamp(30px,8.4vw,40px);letter-spacing:.08em;line-height:1.55}
+  .catch > span + span{padding-top:0;padding-left:1em}
+}
+.hero [data-in]{opacity:0;transform:translateY(14px);transition:opacity 1.2s cubic-bezier(.22,.7,.2,1),transform 1.2s cubic-bezier(.22,.7,.2,1)}
+.is-loaded .hero [data-in]{opacity:1;transform:none}
+.is-loaded .hero [data-in="2"]{transition-delay:.4s}
+.is-loaded .hero [data-in="3"]{transition-delay:.85s}
+.is-loaded .hero [data-in="4"]{transition-delay:1.3s}
+.cue{position:absolute;left:50%;bottom:24px;z-index:2;display:flex;flex-direction:column;align-items:center;gap:8px;font-family:var(--latin);font-size:11px;letter-spacing:.3em;color:var(--mute);transform:translateX(-50%)}
+.cue i{display:block;width:1px;height:46px;background:linear-gradient(var(--mute),transparent);animation:cue 2.4s ease-in-out infinite}
+@keyframes cue{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* ---- reveal ---- */
+.js .rv{opacity:0;transform:translateY(18px);transition:opacity 1.05s cubic-bezier(.22,.7,.2,1),transform 1.05s cubic-bezier(.22,.7,.2,1)}
+.js .rv.is-in{opacity:1;transform:none}
+.js .rv-f{opacity:0;transition:opacity 1.2s ease}
+.js .rv-f.is-in{opacity:1}
+
+/* ---- photo frame ---- */
+.ph{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--base2),var(--deep))}
+.ph img{width:100%;height:100%;object-fit:cover;filter:var(--img-f,saturate(.8) contrast(1.03));transition:transform 1.4s cubic-bezier(.22,.7,.2,1)}
+.ph.is-fallback{background:var(--fallback)}
+
+/* ---- business rows ---- */
+.biz{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(32px,6vw,88px);align-items:center}
+.biz + .biz{margin-top:clamp(72px,10vw,128px)}
+.biz:nth-of-type(even) .biz__media{order:2}
+.biz__media .ph{aspect-ratio:4/3}
+.biz:hover .ph img{transform:scale(1.035)}
+.biz__kind{display:inline-block;font-size:13px;letter-spacing:.16em;color:var(--accent);margin-bottom:12px}
+.biz h3{font-family:var(--serif);font-weight:600;font-size:clamp(22px,2.4vw,30px);letter-spacing:.1em;line-height:1.6;margin-bottom:18px}
+.biz p{max-width:32em}
+.biz p + p{margin-top:12px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.tags li{border:1px solid var(--line);border-radius:999px;padding:4px 14px;font-size:12.5px;letter-spacing:.08em;color:var(--mute)}
+@media (max-width:900px){.biz{grid-template-columns:minmax(0,1fr)}.biz:nth-of-type(even) .biz__media{order:0}}
+
+/* ---- steps ---- */
+.steps{display:grid;grid-template-columns:repeat(var(--n,4),minmax(0,1fr));gap:clamp(16px,2.4vw,32px);position:relative}
+.steps::before{content:"";position:absolute;left:0;right:0;top:11px;height:1px;background:var(--line)}
+.steps::after{content:"";position:absolute;left:0;top:11px;height:1px;width:100%;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform 2.4s cubic-bezier(.6,.1,.2,1)}
+.js .steps.is-in::after{transform:scaleX(1)}
+.step{position:relative;padding-top:46px}
+.step__dot{position:absolute;left:0;top:0;width:23px;height:23px;border-radius:50%;border:1px solid var(--mute);background:var(--sbg,var(--base));display:grid;place-items:center}
+.step__dot::after{content:"";width:11px;height:11px;border-radius:50%;background:var(--accent);transform:scale(1);transition:transform .5s cubic-bezier(.3,1.6,.5,1)}
+.js .steps .step__dot::after{transform:scale(0)}
+.js .steps.is-in .step__dot::after{transform:scale(1)}
+.js .steps.is-in .step:nth-child(2) .step__dot::after{transition-delay:.6s}
+.js .steps.is-in .step:nth-child(3) .step__dot::after{transition-delay:1.2s}
+.js .steps.is-in .step:nth-child(4) .step__dot::after{transition-delay:1.8s}
+.js .steps.is-in .step:nth-child(5) .step__dot::after{transition-delay:2.2s}
+.js .steps .step{opacity:0;transition:opacity .9s cubic-bezier(.22,.7,.2,1)}
+.js .steps.is-in .step{opacity:1}
+.js .steps.is-in .step:nth-child(2){transition-delay:.4s}
+.js .steps.is-in .step:nth-child(3){transition-delay:.8s}
+.js .steps.is-in .step:nth-child(4){transition-delay:1.2s}
+.js .steps.is-in .step:nth-child(5){transition-delay:1.5s}
+.step__no{font-family:var(--mono);font-size:12px;color:var(--accent);letter-spacing:.12em}
+.step h3{font-family:var(--serif);font-weight:600;font-size:21px;letter-spacing:.14em;margin:6px 0 4px}
+.step small{display:block;font-size:12px;letter-spacing:.14em;color:var(--mute);margin-bottom:10px}
+.step p{font-size:15px;color:var(--mute)}
+@media (max-width:900px){
+  .steps{grid-template-columns:minmax(0,1fr);gap:0;padding-left:40px}
+  .steps::before,.steps::after{left:11px;right:auto;top:10px;bottom:10px;width:1px;height:auto}
+  .steps::after{transform:scaleY(0);transform-origin:top}
+  .js .steps.is-in::after{transform:scaleY(1)}
+  .step{padding:0 0 36px}
+  .step__dot{left:-40px}
+}
+
+/* ---- values ---- */
+.vals{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line)}
+.vals li{padding:36px clamp(20px,3vw,40px) 8px;border-left:1px solid var(--line)}
+.vals li:first-child{border-left:0;padding-left:0}
+.vals h3{font-family:var(--serif);font-weight:600;font-size:21px;letter-spacing:.14em;margin:10px 0 12px}
+.vals p{font-size:15px;color:var(--mute)}
+@media (max-width:860px){.vals{grid-template-columns:minmax(0,1fr)}.vals li,.vals li:first-child{border-left:0;padding:28px 0;border-bottom:1px solid var(--line)}}
+
+/* ---- message ---- */
+.msg{display:flex;flex-direction:row-reverse;gap:clamp(40px,6vw,90px);justify-content:center;align-items:flex-start}
+.msg__title{writing-mode:vertical-rl;font-family:var(--serif);font-weight:600;font-size:clamp(28px,3vw,40px);letter-spacing:.2em;line-height:1.7;margin:0;flex:none}
+.msg__body{writing-mode:vertical-rl;font-family:var(--serif);font-size:16px;line-height:2.3;letter-spacing:.14em;height:30em;max-width:100%;overflow-x:auto;display:flex;flex-direction:column}
+.msg__body p{margin:0 0 0 1.6em}
+.msg__body p.lead{font-size:1.3rem;line-height:2}
+.msg__sign{margin-top:auto !important;text-align:end}
+.msg__sign small{display:block;font-size:13px;color:var(--mute);letter-spacing:.2em}
+.msg__sign strong{font-weight:600;font-size:20px;letter-spacing:.3em}
+@media (max-width:860px){
+  .msg{flex-direction:column;gap:32px}
+  .msg__title,.msg__body{writing-mode:horizontal-tb;height:auto}
+  .msg__body{line-height:2.1;letter-spacing:.06em;overflow:visible}
+  .msg__body p{margin:0 0 1.4em}
+  .msg__sign{text-align:right}
+}
+
+/* ---- profile ---- */
+.prof-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:clamp(40px,7vw,110px);align-items:start}
+.prof-grid{row-gap:clamp(40px,6vw,72px)}
+.prof-grid__h{grid-column:1/-1;margin-bottom:0}
+.profile{margin:0;border-top:1px solid var(--line)}
+.profile > div{display:grid;grid-template-columns:9em minmax(0,1fr);gap:20px;padding:22px 0;border-bottom:1px solid var(--line)}
+.profile dt{color:var(--mute);font-size:14px;letter-spacing:.14em}
+.profile dd{margin:0}
+.profile dd ul li{position:relative;padding-left:1.2em}
+.profile dd ul li::before{content:"";position:absolute;left:0;top:.8em;width:6px;height:6px;background:var(--accent);border-radius:var(--bullet-r,50%)}
+@media (max-width:900px){.prof-grid{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:760px){.profile > div{grid-template-columns:minmax(0,1fr);gap:4px}}
+
+/* ---- footer ---- */
+.ft{padding:72px 0 calc(40px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--line);background:var(--deep)}
+.ft__in{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:32px}
+.ft__tag{font-family:var(--serif);font-size:clamp(16px,1.8vw,22px);letter-spacing:.18em;margin-top:18px}
+.ft nav ul{display:flex;flex-wrap:wrap;gap:10px 24px}
+.ft nav a{font-size:12.5px;letter-spacing:.12em;color:var(--mute);text-decoration:none;transition:color .3s}
+.ft nav a:hover{color:var(--text)}
+.ft__copy{width:100%;font-family:var(--latin);font-size:12.5px;letter-spacing:.1em;color:var(--mute);margin-top:12px}
+
+/* ---- draw figures ---- */
+.fig .ln{fill:none;stroke-dasharray:1;stroke-dashoffset:0}
+.js .fig .ln{stroke-dashoffset:1;transition:stroke-dashoffset 2.4s cubic-bezier(.45,.05,.2,1) .3s}
+.js .fig.is-in .ln{stroke-dashoffset:0}
+.js .fig .ln.d2{transition-delay:.8s}.js .fig .ln.d3{transition-delay:1.3s}.js .fig .ln.d4{transition-delay:1.8s}.js .fig .ln.d5{transition-delay:2.3s}
+.js .fig .pop{opacity:0;transform-box:fill-box;transform-origin:center;transform:scale(.4);transition:opacity .8s,transform .8s cubic-bezier(.3,1.6,.5,1)}
+.js .fig.is-in .pop{opacity:1;transform:none}
+.js .fig .lbl{opacity:0;transition:opacity 1s 1.8s}
+.js .fig.is-in .lbl{opacity:1}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .rv,.js .rv-f,.hero [data-in],.js .steps .step{opacity:1;transform:none}
+  .js .steps::after{transform:none}
+  .js .steps .step__dot::after{transform:scale(1)}
+  .js .fig .ln{stroke-dashoffset:0}
+  .js .fig .pop,.js .fig .lbl{opacity:1;transform:none}
+}
+/* ================= site ================= */
+.logo{gap:0}
+.logo__t b{font-family:var(--latin);font-weight:400;font-size:20px;letter-spacing:.4em}
+.logo__t small{font-family:var(--sans);font-size:10px;letter-spacing:.2em}
+.gnav a{opacity:.82;transition:opacity .3s}.gnav a:hover{opacity:1}
+.gnav a::after{background:repeating-linear-gradient(90deg,var(--accent) 0 4px,transparent 4px 7px)}
+.hero{background:radial-gradient(60% 60% at 50% 50%,#26262C 0%,var(--base) 70%)}
+.hero__in{width:min(1280px,100% - 48px);margin-inline:auto;min-height:100svh;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,auto) minmax(0,1fr);gap:clamp(24px,4vw,64px);align-items:center;padding:calc(var(--hh) + 32px) 0 80px}
+.hero__lead{align-self:end;max-width:24em}
+.hero__lead .en{display:block;font-family:var(--latin);font-style:italic;font-size:clamp(20px,2vw,26px);color:var(--accent);margin-bottom:12px}
+.hero__lead p{font-size:15px;color:#E2DDD5}
+.hero__lead ul{margin-top:20px;border-top:1px solid var(--line)}
+.hero__lead li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid var(--line);font-size:13.5px;letter-spacing:.08em}
+.hero__lead li span{font-family:var(--latin);font-style:italic;color:var(--mute);font-size:13px}
+.disc{position:relative;width:min(40vw,62vh,520px);aspect-ratio:1}
+.disc .ph{position:absolute;inset:12%;border-radius:50%}
+.disc .ph img{filter:saturate(.75) contrast(1.04)}
+.disc canvas{position:absolute;inset:0;width:100%;height:100%}
+.hero .catch{justify-self:end;--stg:2.8em;font-size:clamp(30px,3.2vw,46px)}
+@media (max-width:900px){
+  .hero__in{grid-template-columns:minmax(0,1fr);justify-items:start;gap:28px}
+  .hero .catch{order:-1;justify-self:start}
+  .disc{order:0;width:min(84vw,420px);justify-self:center}
+  .hero__lead{order:1}
+}
+.cue{display:none}
+/* heading H1': big italic Bodoni + small JA */
+.sh{display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 22px;margin-bottom:clamp(40px,6vw,72px)}
+.sh .en{font-family:var(--latin);font-style:italic;font-size:clamp(40px,5.6vw,68px);line-height:1}
+.sh h2{font-family:var(--serif);font-weight:600;font-size:15px;letter-spacing:.24em;color:var(--accent)}
+.sh h2::before{content:"";display:inline-block;width:22px;height:1px;margin-right:10px;vertical-align:.3em;background:repeating-linear-gradient(90deg,var(--accent) 0 3px,transparent 3px 5px)}
+.state{font-family:var(--serif);font-size:clamp(22px,2.6vw,32px);letter-spacing:.12em;line-height:1.85;margin-bottom:24px}
+/* concept */
+.concept{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,7vw,110px);align-items:center}
+.concept p + p{margin-top:14px}
+.jkfig{width:100%;max-width:420px;justify-self:center;height:auto}
+.jkfig .ln{stroke:var(--text);stroke-width:1.3;stroke-linejoin:round}
+.jkfig .ln.st{stroke:var(--accent);stroke-dasharray:1}
+.jkfig .ln.ms{stroke:var(--accent);stroke-width:1}
+.jkfig text{font-family:var(--mono);font-size:11px;fill:var(--accent);letter-spacing:.08em;text-anchor:middle}
+.jkfig .stitch{fill:none;stroke:var(--accent);stroke-width:1.2;stroke-dasharray:5 4}
+.concept .ph{aspect-ratio:16/10;margin-top:32px}
+@media (max-width:900px){.concept{grid-template-columns:minmax(0,1fr)}}
+/* service rows */
+.biz__media .ph{aspect-ratio:4/5;max-width:440px;border-radius:2px}
+.biz:nth-of-type(even) .biz__media .ph{margin-left:auto}
+.biz__media .ph::after{content:"";position:absolute;inset:10px;border:1px dashed rgba(241,237,230,.45);pointer-events:none}
+.biz__kind{font-family:var(--latin);font-style:italic;font-size:17px;letter-spacing:.04em}
+/* color */
+.color{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,7vw,110px);align-items:center}
+.chips{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:28px}
+.chip{border-radius:2px;aspect-ratio:5/3;display:flex;align-items:flex-end;padding:8px 10px;font-family:var(--latin);font-style:italic;font-size:14px;color:rgba(20,20,23,.8);transform:none;opacity:1;transition:transform .7s cubic-bezier(.3,1.6,.5,1),opacity .6s}
+.chip.dk{color:rgba(255,255,255,.85)}
+.js .chips .chip{opacity:0;transform:translateY(12px) rotate(-3deg)}
+.js .chips.is-in .chip{opacity:1;transform:none}
+.js .chips.is-in .chip:nth-child(2){transition-delay:.12s}.js .chips.is-in .chip:nth-child(3){transition-delay:.24s}
+.js .chips.is-in .chip:nth-child(4){transition-delay:.36s}.js .chips.is-in .chip:nth-child(5){transition-delay:.48s}.js .chips.is-in .chip:nth-child(6){transition-delay:.6s}
+.color__ph{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:4px}
+.color__ph .ph{aspect-ratio:3/4}
+.color__ph .ph:last-child{margin-top:18%}
+@media (max-width:900px){.color{grid-template-columns:minmax(0,1fr)}}
+.sec--paper{--accent:#3D6E9C}
+.sec--paper .step__dot{--sbg:var(--paper)}
+.sec--paper .sh .en{color:var(--ink)}
+.msgsec{background:var(--base2)}
+/* rail : 巻尺 */
+.rail{width:26px;overflow:hidden;border-radius:2px;background:#E9DFA8;--tape:#E9DFA8}
+.rail .rail__line,.rail .rail__fill{display:none}
+.rail__scale{position:absolute;left:0;right:0;top:0;height:400%;background:repeating-linear-gradient(180deg,rgba(27,27,31,.75) 0 1px,transparent 1px 8px),repeating-linear-gradient(180deg,rgba(27,27,31,.9) 0 1.5px,transparent 1.5px 40px);background-size:10px 100%,18px 100%;background-repeat:repeat-y;will-change:transform}
+.rail__needle{position:absolute;left:0;right:0;top:50%;height:2px;background:#C0392B}
+.rail .rail__tick{display:none}
+.rail__read{position:fixed;right:52px;top:50%}
+.rail-wrap{position:fixed;right:22px;top:50%;transform:translateY(-50%);height:52vh;z-index:90;pointer-events:none}
+@media (max-width:860px){.rail{width:12px}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">本文へスキップ</a>
+<header class="hd" id="hd">
+  <div class="hd__in">
+    <a class="logo" href="#top" aria-label="株式会社Elista トップへ">
+      <!-- 【確認事項】ロゴ「ELISTA」は商号をもとにした仮表記です -->
+      <span class="logo__t"><b>ELISTA</b><small>株式会社Elista</small></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-controls="gnav" aria-expanded="false" aria-label="メニューを開く"><span></span><span></span><span></span></button>
+    <nav class="gnav" id="gnav" aria-label="メインメニュー"><ul><li><a href="#concept">考え方</a></li><li><a href="#service">事業内容</a></li><li><a href="#color">パーソナルカラー</a></li><li><a href="#flow">一着ができるまで</a></li><li><a href="#message">代表メッセージ</a></li><li><a href="#company">会社概要</a></li></ul></nav>
+  </div>
+</header>
+<!-- 進捗レール：仕立て用の巻尺。目盛りが流れ、寸法を読み上げる -->
+<div class="rail" id="rail" aria-hidden="true">
+  <span class="rail__scale" id="railScale"></span>
+  <span class="rail__needle"></span>
+</div>
+<span class="rail__read" id="railRead" aria-hidden="true" style="position:fixed;right:54px;top:50%;transform:translateY(-50%);z-index:90;pointer-events:none">000.0 cm</span>
+<main id="main">
+<section class="hero" id="top" aria-label="メインビジュアル">
+    <div class="hero__in">
+      <div class="hero__lead" data-in="3">
+        <span class="en">Made to your measure.</span>
+        <p>株式会社Elistaは、<span class="nw">オーダーシャツやオーダースーツの仕立てから、</span><span class="nw">スタイリング、特別な日の装い、</span><span class="nw">パーソナルカラー診断まで。</span><span class="nw">あなたの魅力を引き出す服選びに寄り添います。</span></p>
+        <ul>
+          <li>オーダーメイドファッション<span>Order made</span></li>
+          <li>スタイリング・ショッピング同行<span>Styling</span></li>
+          <li>婚活・特別な日のスタイリング<span>Special day</span></li>
+          <li>パーソナルカラー診断<span>Personal color</span></li>
+        </ul>
+      </div>
+      <div class="disc" data-in="1">
+        <div class="ph"><img src="https://images.unsplash.com/photo-1593030103066-0093718efeb9?auto=format&amp;fit=crop&amp;w=1100&amp;q=72" alt="体に合わせて仕立てられたネイビーのスーツ" onerror="this.parentNode.classList.add('is-fallback');this.remove()"></div>
+        <canvas id="heroCanvas" aria-hidden="true"></canvas>
+      </div>
+      <!-- 【確認事項】キャッチコピーは案です -->
+      <h1 class="catch" aria-label="あなたのための一着を、ともに選ぶ。"><span data-in="1">あなたのための一着を、</span><span data-in="2">ともに選ぶ。</span></h1>
+    </div>
+  </section>
+
+  <section class="sec" id="concept" data-rail aria-labelledby="concept-h">
+    <div class="wrap concept">
+      <div class="rv">
+        <div class="sh"><span class="en" aria-hidden="true">Concept</span><h2 id="concept-h">考え方</h2></div>
+        <!-- 【確認事項】コンセプト文は案です -->
+        <p class="state"><span class="nw">服を選ぶ時間を、</span><br><span class="nw">新しい自分に出会う時間に。</span></p>
+        <p>好みも、体型も、着ていく場面も、人それぞれ。だからこそ、似合う一着は、その人と向き合い、その人の「寸法」をていねいに測るところから生まれます。</p>
+        <p>Elistaは、オーダーシャツやオーダースーツの仕立てから、日々のコーディネート、婚活や結婚式といった特別な日の装い、似合う色を見つけるパーソナルカラー診断まで。メンズ・レディースを問わず、お客様の魅力を引き出す服選びに寄り添います。</p>
+        <div class="ph"><img src="https://images.unsplash.com/photo-1491336477066-31156b5e4f35?auto=format&amp;fit=crop&amp;w=1100&amp;q=72" alt="スーツの袖口のディテール" loading="lazy" onerror="this.parentNode.classList.add('is-fallback');this.remove()"></div>
+      </div>
+      <svg class="jkfig fig" viewBox="0 0 400 440" role="img" aria-label="ジャケットの輪郭を縫い線がたどり、肩幅と着丈の寸法線が引かれる図">
+        <path class="ln" pathLength="1" d="M150 60 L120 74 L70 96 L58 380 L176 400 L200 210 L224 400 L342 380 L330 96 L280 74 L250 60 L200 150 Z"/>
+        <path class="ln d2" pathLength="1" d="M150 60 L176 140 L200 210 M250 60 L224 140 L200 210"/>
+        <path class="stitch ln st d3" pathLength="1" d="M78 112 L68 368 L166 384"/>
+        <path class="ln ms d4" pathLength="1" d="M70 40 H330 M70 34 V46 M330 34 V46"/>
+        <path class="ln ms d4" pathLength="1" d="M370 74 V400 M364 74 H376 M364 400 H376"/>
+        <text class="lbl" x="200" y="28">SHOULDER</text>
+        <text class="lbl" x="384" y="240" transform="rotate(90 384 240)">LENGTH</text>
+        <circle class="pop" cx="200" cy="250" r="4" style="fill:var(--accent);transition-delay:1.8s"/>
+        <circle class="pop" cx="200" cy="300" r="4" style="fill:var(--accent);transition-delay:2s"/>
+      </svg>
+    </div>
+  </section>
+
+  <section class="sec sec--alt" id="service" data-rail aria-labelledby="service-h">
+    <div class="wrap">
+      <div class="sh rv"><span class="en" aria-hidden="true">Service</span><h2 id="service-h">事業内容</h2></div>
+      <!-- 【確認事項】各説明はCSVを要約。英字見出しは仮表記です -->
+      <article class="biz">
+        <div class="biz__media rv"><div class="ph"><img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&amp;fit=crop&amp;w=1400&amp;q=72" alt="ブルーのチェック柄で仕立てた三つ揃えのスーツ" loading="lazy" onerror="this.parentNode.classList.add('is-fallback');this.remove()"></div></div>
+        <div class="rv"><span class="biz__kind">Order made</span><h3>オーダーメイドファッションの<br>企画・販売</h3><p>オーダーシャツやオーダースーツを中心に、好みや体型、着用シーンに合わせた一着を提案・販売します。生地やデザイン選びから仕上がりまで寄り添い、特別な装いをつくります。</p><ul class="tags"><li>オーダーシャツ</li><li>オーダースーツ</li><li>メンズ・レディース</li></ul></div>
+      </article>
+      <article class="biz">
+        <div class="biz__media rv"><div class="ph"><img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&amp;fit=crop&amp;w=1400&amp;q=72" alt="ハンガーに並ぶやわらかな色のニット" loading="lazy" onerror="this.parentNode.classList.add('is-fallback');this.remove()"></div></div>
+        <div class="rv"><span class="biz__kind">Styling</span><h3>スタイリング・ショッピング同行</h3><p>好みやライフスタイル、なりたいイメージに合わせたコーディネートを一緒に考え、実際のショッピングにも同行します。新しい自分に出会える、楽しいファッション体験を。</p><ul class="tags"><li>コーディネート提案</li><li>ショッピング同行</li></ul></div>
+      </article>
+      <article class="biz">
+        <div class="biz__media rv"><div class="ph"><img src="https://images.unsplash.com/photo-1600091166971-7f9faad6c1e2?auto=format&amp;fit=crop&amp;w=1400&amp;q=72" alt="ディスプレイされたタキシードとジャケット" loading="lazy" onerror="this.parentNode.classList.add('is-fallback');this.remove()"></div></div>
+        <!-- 【確認事項】連携先の結婚相談所の名称は未記載です -->
+        <div class="rv"><span class="biz__kind">Special day</span><h3>婚活・特別な日の<br>スタイリング相談</h3><p>タキシードやモテコーデなど、結婚式や婚活、特別なシーンに合わせた装いをカウンセリング。結婚相談所とも連携し、カラー診断やショッピング同行を通じて魅力を引き出します。</p><ul class="tags"><li>タキシード</li><li>婚活コーデ</li><li>結婚相談所との連携</li></ul></div>
+      </article>
+      <article class="biz">
+        <div class="biz__media rv"><div class="ph"><img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&amp;fit=crop&amp;w=1400&amp;q=72" alt="色とりどりの絵の具と筆" loading="lazy" onerror="this.parentNode.classList.add('is-fallback');this.remove()"></div></div>
+        <div class="rv"><span class="biz__kind">Personal color</span><h3>パーソナルカラー診断</h3><p>肌・髪・瞳の色などをもとに、似合う色やファッション、メイクの傾向を提案します。自分らしい魅力を引き出す色を一緒に見つけ、毎日の服選びを楽しくサポートします。</p><ul class="tags"><li>似合う色の提案</li><li>ファッション・メイクの傾向</li></ul></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="sec" id="color" data-rail aria-labelledby="color-h">
+    <div class="wrap color">
+      <div class="rv">
+        <div class="sh"><span class="en" aria-hidden="true">Personal color</span><h2 id="color-h">パーソナルカラー</h2></div>
+        <p class="state"><span class="nw">似合う色は、</span><span class="nw">あなたの中にある。</span></p>
+        <p>肌、髪、瞳。もともと持っている色をもとに、自分らしい魅力を引き出す色を一緒に見つけます。服選びに迷う時間が、選ぶ楽しさに変わります。</p>
+        <!-- 【確認事項】色見本はイメージです（診断の分類名ではありません） -->
+        <div class="chips" data-io aria-hidden="true"><span class="chip" style="background:#E9C9B8">Soft</span><span class="chip" style="background:#C9D6E8">Cool</span><span class="chip" style="background:#D9A86C">Warm</span><span class="chip dk" style="background:#5B4A6E">Deep</span><span class="chip" style="background:#A8C3A0">Mild</span><span class="chip dk" style="background:#B8475A">Vivid</span></div>
+      </div>
+      <div class="color__ph rv-f">
+        <div class="ph"><img src="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&amp;fit=crop&amp;w=900&amp;q=72" alt="店内のラックに並ぶやわらかな色の服" loading="lazy" onerror="this.parentNode.classList.add('is-fallback');this.remove()"></div>
+        <div class="ph"><img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&amp;fit=crop&amp;w=900&amp;q=72" alt="ハンガーに掛けられた落ち着いた色の服" loading="lazy" onerror="this.parentNode.classList.add('is-fallback');this.remove()"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec--paper" id="flow" data-rail aria-labelledby="flow-h">
+    <div class="wrap">
+      <div class="sh rv"><span class="en" aria-hidden="true">Process</span><h2 id="flow-h">一着ができるまで</h2></div>
+      <!-- 【確認事項】流れは想定です（オーダーメイドの場合のおおまかな流れ。実際の順序のため番号を使用） -->
+      <ol class="steps">
+        <li class="step"><span class="step__dot" aria-hidden="true"></span><span class="step__no">01</span><h3>聴く</h3><small>カウンセリング</small><p>好みや体型、着ていく場面を伺います。</p></li>
+        <li class="step"><span class="step__dot" aria-hidden="true"></span><span class="step__no">02</span><h3>選ぶ</h3><small>生地・デザイン</small><p>イメージに合う生地とデザインを一緒に選びます。</p></li>
+        <li class="step"><span class="step__dot" aria-hidden="true"></span><span class="step__no">03</span><h3>仕立てる</h3><small>仕立て</small><p>お客様のための一着を仕立てます。</p></li>
+        <li class="step"><span class="step__dot" aria-hidden="true"></span><span class="step__no">04</span><h3>届ける</h3><small>お渡し</small><p>仕上がりまで寄り添い、お手元へお届けします。</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec msgsec" id="message" data-rail aria-labelledby="message-h">
+    <div class="wrap">
+      <div class="sh rv"><span class="en" aria-hidden="true">Message</span><h2 id="message-h">代表メッセージ</h2></div>
+      <!-- 【確認事項】代表メッセージは草案です。ご本人の確認・修正を経て公開してください -->
+      <div class="msg rv">
+        <p class="msg__title">似合う一着は、<br>会話から生まれる。</p>
+        <div class="msg__body">
+          <p class="lead">「何を着たらいいのか分からない」。そんな言葉を、これまで何度も聞いてきました。</p>
+          <p>服選びに迷うのは、センスがないからではありません。自分の体型や似合う色、着ていく場面に合った選び方を、まだ知らないだけなのだと思います。</p>
+          <p>私たちは、まずゆっくりお話を伺うところから始めます。好きなもの、なりたいイメージ、大切な日の予定。その一つひとつが、あなたのための一着の「寸法」になります。</p>
+          <p>鏡の前で少し背筋が伸びる。そんな瞬間を、一緒につくっていけたら嬉しいです。</p>
+          <!-- 【確認事項】署名の氏名は会社概要にのみ記載。役職名は仮置き -->
+          <p class="msg__sign"><small>代表取締役</small><strong>鶴澤恵梨</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="company" data-rail aria-labelledby="company-h">
+    <div class="wrap prof-grid">
+      <div class="sh rv prof-grid__h"><span class="en" aria-hidden="true">Company</span><h2 id="company-h">会社概要</h2></div>
+      <div class="rv"><div class="ph" style="aspect-ratio:3/4;max-width:300px"><img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&amp;fit=crop&amp;w=800&amp;q=72" alt="白いシャツにネクタイを合わせた装い" loading="lazy" onerror="this.parentNode.classList.add('is-fallback');this.remove()"></div></div>
+      <dl class="profile rv">
+        <div><dt>商号</dt><dd>株式会社Elista</dd></div>
+        <!-- 【確認事項】役職名は「代表取締役」と仮置き -->
+        <div><dt>代表者</dt><dd>代表取締役　鶴澤恵梨</dd></div>
+        <div><dt>所在地</dt><dd>大阪府大阪市淀川区西中島四丁目4番25号</dd></div>
+        <div><dt>事業内容</dt><dd><ul><li>オーダーメイドファッションの企画・販売事業</li><li>スタイリング・ショッピング同行事業</li><li>婚活・特別な日のスタイリング相談事業</li><li>パーソナルカラー診断事業</li></ul></dd></div>
+        <!-- 【確認事項】設立・資本金などはCSVにないため未記載
+        <div><dt>設立</dt><dd>----年--月</dd></div>
+        <div><dt>資本金</dt><dd>---万円</dd></div>
+        -->
+      </dl>
+    </div>
+  </section>
+</main>
+<footer class="ft">
+  <div class="wrap ft__in">
+    <div>
+      <a class="logo" href="#top" aria-label="株式会社Elista トップへ">
+      <!-- 【確認事項】ロゴ「ELISTA」は商号をもとにした仮表記です -->
+      <span class="logo__t"><b>ELISTA</b><small>株式会社Elista</small></span>
+    </a>
+      <p class="ft__tag">あなたのための一着を、ともに選ぶ。</p>
+    </div>
+    <nav aria-label="フッターメニュー"><ul><li><a href="#concept">考え方</a></li><li><a href="#service">事業内容</a></li><li><a href="#color">パーソナルカラー</a></li><li><a href="#flow">一着ができるまで</a></li><li><a href="#message">代表メッセージ</a></li><li><a href="#company">会社概要</a></li></ul></nav>
+    <p class="ft__copy">&copy; <span class="js-year">2026</span> 株式会社Elista</p>
+  </div>
+</footer>
+<script>
+var REDUCE = matchMedia('(prefers-reduced-motion: reduce)').matches;
+function heroCanvas(cv, api){
+  if (!cv || !cv.getContext) return null;
+  var ctx = cv.getContext('2d'), host = cv.parentElement;
+  var W = 0, H = 0, dpr = 1, running = false, visible = true, raf = 0, t0 = performance.now();
+  function resize(){
+    dpr = Math.min(window.devicePixelRatio || 1, 2);
+    W = cv.clientWidth; H = cv.clientHeight;
+    cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr);
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    api.build(ctx, W, H, W < 760);
+  }
+  function loop(now){ if (!running) return; api.draw(ctx, (now - t0) / 1000, W, H); raf = requestAnimationFrame(loop); }
+  function start(){ if (running || REDUCE || !visible || document.hidden) return; running = true; raf = requestAnimationFrame(loop); }
+  function stop(){ running = false; cancelAnimationFrame(raf); }
+  function still(){ api.draw(ctx, api.still || 99, W, H); }
+  resize();
+  if (REDUCE) still(); else start();
+  var rt, lastW = W;
+  addEventListener('resize', function(){
+    clearTimeout(rt);
+    rt = setTimeout(function(){
+      if (cv.clientWidth === lastW && Math.abs(cv.clientHeight - H) < 120) return;
+      lastW = cv.clientWidth; resize(); if (!running) still();
+    }, 150);
+  });
+  if ('IntersectionObserver' in window){
+    new IntersectionObserver(function(en){ visible = en[0].isIntersecting; visible ? start() : stop(); }).observe(host);
+  }
+  document.addEventListener('visibilitychange', function(){ document.hidden ? stop() : start(); });
+  return { redraw: function(){ if (!running) still(); } };
+}
+function loadImg(src, cb){ var im = new Image(); im.decoding = 'async'; im.onload = function(){ cb(im); }; im.src = src; return im; }
+(function(){
+  var SWC = ['233,201,184','201,214,232','217,168,108','91,74,110','168,195,160','184,71,90'];
+  var bits = [];
+  function cl(v){ return Math.min(1, Math.max(0, v)); }
+  var api = {
+    still: 99,
+    build: function(ctx, W, H){
+      bits = [];
+      for (var i = 0; i < 18; i++) bits.push({ a: i / 18 * Math.PI * 2, c: SWC[i % 6], r: .455 + (i % 3) * .018, d: .3 + i * .08, s: (i % 2 ? 1 : -1) });
+    },
+    draw: function(ctx, t, W, H){
+      ctx.clearRect(0, 0, W, H);
+      var cx = W / 2, cy = H / 2, R = W * .38 + 7;
+      // stitches running round the photo, one stitch at a time
+      var k = cl((t - .4) / 3.2), n = 120, show = Math.floor(n * k);
+      ctx.strokeStyle = 'rgba(142,180,216,.95)'; ctx.lineWidth = 1.6; ctx.lineCap = 'round';
+      for (var i = 0; i < show; i++){
+        var a0 = -Math.PI / 2 + i / n * Math.PI * 2, a1 = a0 + Math.PI * 2 / n * .55;
+        ctx.beginPath(); ctx.arc(cx, cy, R, a0, a1); ctx.stroke();
+      }
+      if (k > 0 && k < 1){ // the needle
+        var an = -Math.PI / 2 + k * Math.PI * 2;
+        ctx.strokeStyle = 'rgba(241,237,230,.9)'; ctx.lineWidth = 1;
+        ctx.beginPath(); ctx.moveTo(cx + Math.cos(an) * (R - 10), cy + Math.sin(an) * (R - 10)); ctx.lineTo(cx + Math.cos(an) * (R + 14), cy + Math.sin(an) * (R + 14)); ctx.stroke();
+      }
+      // measuring ticks on an outer ring
+      ctx.strokeStyle = 'rgba(241,237,230,' + (.35 * cl((t - 1) / 1.5)) + ')'; ctx.lineWidth = 1;
+      for (var j = 0; j < 72; j++){
+        var a = j / 72 * Math.PI * 2, r1 = W * .49, r2 = r1 - (j % 6 ? 4 : 9);
+        ctx.beginPath(); ctx.moveTo(cx + Math.cos(a) * r1, cy + Math.sin(a) * r1); ctx.lineTo(cx + Math.cos(a) * r2, cy + Math.sin(a) * r2); ctx.stroke();
+      }
+      // colour swatches orbiting slowly
+      var rot = REDUCE ? 0 : t * .05;
+      bits.forEach(function(b){
+        var e = cl((t - 2.2 - b.d) / .8); if (e <= 0) return;
+        var a = b.a + rot * b.s, rr = W * b.r, x = cx + Math.cos(a) * rr, y = cy + Math.sin(a) * rr;
+        ctx.save(); ctx.translate(x, y); ctx.rotate(a + Math.PI / 2);
+        ctx.fillStyle = 'rgba(' + b.c + ',' + (.92 * e) + ')'; ctx.fillRect(-7, -4.5, 14, 9);
+        ctx.restore();
+      });
+    }
+  };
+  heroCanvas(document.getElementById('heroCanvas'), api);
+  var scale = document.getElementById('railScale'), read = document.getElementById('railRead');
+  window.railUpdate = function(p){
+    scale.style.transform = 'translateY(' + (-p * 75) + '%)';
+    var cm = (p * 120).toFixed(1); while (cm.length < 5) cm = '0' + cm;
+    read.textContent = cm + ' cm';
+  };
+})();
+(function(){
+  'use strict';
+  var hd = document.getElementById('hd');
+  var rail = document.getElementById('rail'), fill = document.getElementById('railFill');
+  var tickHost = document.getElementById('railTicks') || rail;
+  var secs = Array.prototype.slice.call(document.querySelectorAll('[data-rail]')), ticks = [];
+  function maxScroll(){ return Math.max(1, document.documentElement.scrollHeight - innerHeight); }
+  function layoutTicks(){
+    if (!rail) return;
+    ticks.forEach(function(t){ t.el.remove(); }); ticks = [];
+    var max = maxScroll();
+    secs.forEach(function(s){
+      var p = Math.min(1, Math.max(0, (s.getBoundingClientRect().top + scrollY) / max)), el = document.createElement('i');
+      el.className = 'rail__tick'; el.style.top = (p * 100) + '%'; tickHost.appendChild(el); ticks.push({p:p, el:el});
+    });
+    if (window.railLayout) window.railLayout(ticks.map(function(t){ return t.p; }));
+  }
+  function updateRail(){
+    if (!rail) return;
+    var p = Math.min(1, Math.max(0, scrollY / maxScroll()));
+    if (fill) fill.style.transform = 'scaleY(' + p + ')';
+    var n = 0;
+    ticks.forEach(function(t){ var on = p >= t.p - .002; t.el.classList.toggle('is-passed', on); if (on) n++; });
+    if (window.railUpdate) window.railUpdate(p, n, ticks.length);
+  }
+  var ticking = false;
+  function onScroll(){ if (hd) hd.classList.toggle('is-scrolled', scrollY > 40); updateRail(); ticking = false; }
+  addEventListener('scroll', function(){ if (!ticking){ ticking = true; requestAnimationFrame(onScroll); } }, {passive:true});
+  addEventListener('load', function(){ layoutTicks(); updateRail(); });
+  var rz; addEventListener('resize', function(){ clearTimeout(rz); rz = setTimeout(function(){ layoutTicks(); updateRail(); }, 160); });
+  layoutTicks(); onScroll();
+
+  var btn = document.getElementById('menuBtn'), nav = document.getElementById('gnav');
+  function setMenu(open){
+    btn.setAttribute('aria-expanded', String(open));
+    btn.setAttribute('aria-label', open ? 'メニューを閉じる' : 'メニューを開く');
+    nav.classList.toggle('is-open', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+    if (open){ var f = nav.querySelector('a'); if (f) f.focus(); }
+  }
+  if (btn && nav){
+    btn.addEventListener('click', function(){ setMenu(btn.getAttribute('aria-expanded') !== 'true'); });
+    nav.addEventListener('click', function(e){ if (e.target.closest('a') && nav.classList.contains('is-open')) setMenu(false); });
+    document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && nav.classList.contains('is-open')){ setMenu(false); btn.focus(); } });
+    matchMedia('(min-width:901px)').addEventListener('change', function(m){ if (m.matches) setMenu(false); });
+  }
+
+  var targets = document.querySelectorAll('.rv, .rv-f, .fig, .steps, [data-io]');
+  function hit(el){ el.classList.add('is-in'); if (window.onReveal) window.onReveal(el); }
+  if ('IntersectionObserver' in window && !REDUCE){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if (!en.isIntersecting) return; hit(en.target); io.unobserve(en.target); });
+    }, {threshold:.18, rootMargin:'0px 0px -6% 0px'});
+    targets.forEach(function(t){ io.observe(t); });
+  } else { targets.forEach(hit); }
+
+  document.querySelectorAll('.js-year').forEach(function(y){ y.textContent = new Date().getFullYear(); });
+  requestAnimationFrame(function(){ requestAnimationFrame(function(){ document.body.classList.add('is-loaded'); }); });
+})();
+</script>
+</body>
+</html>
